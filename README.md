@@ -1,10 +1,10 @@
 # Yagi (摩羯)
 
 <p align="center">
-  <a href="https://cocoapods.org/pods/Yagi"><img src="https://img.shields.io/cocoapods/v/Yagi.svg?style=for-the-badge"/></a>
-  <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-compatible-orange?style=for-the-badge"></a> 
-  <a href="https://cocoapods.org/pods/Yagi"><img src="https://img.shields.io/cocoapods/l/Yagi.svg?style=for-the-badge"/></a>
-  <a href="https://cocoapods.org/pods/Yagi"><img src="https://img.shields.io/cocoapods/p/Yagi.svg?style=for-the-badge"/></a>
+  <a href="https://cocoapods.org/pods/Yagi"><img src="https://img.shields.io/cocoapods/v/Yagi.svg?style=flat"/></a>
+  <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-compatible-orange?style=flat"></a> 
+  <a href="https://cocoapods.org/pods/Yagi"><img src="https://img.shields.io/cocoapods/l/Yagi.svg?style=flat"/></a>
+  <a href="https://cocoapods.org/pods/Yagi"><img src="https://img.shields.io/cocoapods/p/Yagi.svg?style=flat"/></a>
 </p>
 
 `Yagi` 是一个自定义 `AVAssetExportSession` 框架，可以在对导出视频压缩效果不减弱的情况下获得更小的体积。
@@ -201,16 +201,15 @@ let videoActualBitRate = min(preset.videoBitRate, videoEstimatedBitRate)
 被压缩视频[源文件](https://drive.google.com/file/d/19-iTIOl5JHq-eXN2dw0va46p5XJFjPs4/view?usp=sharing)
 
 压缩结果:
-Name | Resolution | Video Bitrate (Mbps) | Audio Bitrate (kbps) | Audio Sampling Rate (kHz) | Size (MB)  
--|-|-|-|-|-
-源文件 | 3840*2160 | 50.2 | 128.0 | 48.0 | 378.7 |
-VMAssetExportPreset1080p | 1920*1080 | 5.0 | 128.0 | 44.1 | 38.6 |
-VMAssetExportPreset720p | 1280*720 | 2.5 | 64.0 | 44.1 | 19.0 |
-VMAssetExportPreset480p | 848*478 | 1.2 | 64.0 | 44.1 | 9.5 |
-VMAssetExportPreset360p | 640*360 | 0.9 | 64.0 | 44.1 | 7.2 |
-AVAssetExportPreset1920x1080 | 1920*1080 | 14.9 | 128.0 | 48.0 | 114.0 |
-AVAssetExportPreset1280x720 | 1280*720 | 10.3 | 128.0 | 48.0 | 79.3 |
-AVAssetExportPreset640x480 | 640*360 | 2.6 | 128.0 | 48.0 | 21.8 |
+| Name | Resolution | Video Bitrate (Mbps) | Audio Bitrate (kbps) | Audio Sampling Rate (kHz) | Size (MB) |
+|-|-|-|-|-|-|
+| 源文件 | 3840*2160 | 50.2 | 128.0 | 48.0 | 378.7 |
+| VMAssetExportPreset1080p | 1920*1080 | 5.0 | 128.0 | 44.1 | 38.6 |
+| VMAssetExportPreset720p | 1280*720 | 2.5 | 64.0 | 44.1 | 19.0 |
+| VMAssetExportPreset480p | 848*478 | 1.2 | 64.0 | 44.1 | 9.5 |
+| VMAssetExportPreset360p | 640*360 | 0.9 | 64.0 | 44.1 | 7.2 |
+| AVAssetExportPreset1920x1080 | 1920*1080 | 14.9 | 128.0 | 48.0 | 114.0 |AVAssetExportPreset1280x720 | 1280*720 | 10.3 | 128.0 | 48.0 | 79.3 |
+| AVAssetExportPreset640x480 | 640*360 | 2.6 | 128.0 | 48.0 | 21.8 |
 
 压缩后效果图:
 

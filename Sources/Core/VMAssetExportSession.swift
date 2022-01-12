@@ -114,11 +114,11 @@ public class VMAssetExportSession: NSObject {
   /// - Parameters:
   ///   - asset: 需要导出的 AVAsset 实例
   ///   - preset: 导出预设模版
-  public init(asset: AVAsset, preset: Preset) {
+  public init(asset: AVAsset, preset: Preset, timeRange: CMTimeRange = CMTimeRangeMake(start: .zero, duration: .positiveInfinity)) {
     self.asset = asset
     self._preset = preset
     
-    self._timeRange = CMTimeRangeMake(start: .zero, duration: .positiveInfinity)
+    self._timeRange = timeRange
     self._globalQueue = DispatchQueue(label: "com.max.jian.Yagi.export.session", qos: .userInteractive, attributes: [.concurrent], autoreleaseFrequency: .workItem, target: nil)
     self._videoInputQueue = DispatchQueue(label: "com.max.jian.Yagi.export.session.video", qos: .default, autoreleaseFrequency: .workItem, target: self._globalQueue)
     self._audioInputQueue = DispatchQueue(label: "com.max.jian.Yagi.export.session.audio", qos: .default, autoreleaseFrequency: .workItem, target: self._globalQueue)
